@@ -11,17 +11,7 @@ import send from '../../assets/send.svg'
 
 const socket = io('http://localhost:3333', { transports : ['websocket'] })
 
-
-
-/* socket.on('like', likedPost => {
-    setFeed(
-        feed.map(post => {
-            return post._id === likedPost._id ? likedPost : post
-        })
-    )
-}) */
-
-export default () => {
+export default function Feed (){
     const [feed, setFeed] = useState([])
 
 

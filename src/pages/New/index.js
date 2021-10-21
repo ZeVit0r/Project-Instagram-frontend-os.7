@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import api from '../../services/api'
 import './style.css'
 
-export default props => {
+export default function New(props){
     const [image, setImage] = useState(null)
     const [author, setAuthor] = useState('')
     const [place, setPlace] = useState('')
